@@ -1,5 +1,5 @@
-- name : tes creation win file and dir
-  hosts: winhost
+- name : deploiement poc mbc
+  hosts: pocmbc_inventaire
   tasks:
     - name: add a new file
       win_file:
