@@ -1,5 +1,5 @@
 - name : deploiement poc mbc
-  hosts: pocmbc_inventaire
+  hosts: winhosts
   tasks:
     - name: add a new file
       win_file:
