@@ -9,7 +9,7 @@
       win_file:
         path: C:\scripts\TestScripts
         state: absent
-    - name: Download release
-      get_url:
+    - name: Download artifacts
+      win_get_url:
         url: https://github.com/enioka/mobicop/archive/32.10.zip
-        dest: C:\scripts\TestScripts
+        dest: C:\POCMOBICOP\DELIVERIES\
