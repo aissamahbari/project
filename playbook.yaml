@@ -1,4 +1,4 @@
-- name : deploiement poc mbc
+- name : Deploiement poc MBC
   hosts: winhosts
   tasks:
     - name: add a new file
@@ -9,7 +9,7 @@
       win_file:
         path: C:\scripts\TestScripts
         state: absent
-    - name: Download artifacts
+    - name: Download Mobicop artifacts
       win_get_url:
         url: https://github.com/enioka/mobicop/archive/32.10.zip
         dest: C:\POCMOBICOP\DELIVERIES\
