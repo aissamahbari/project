@@ -5,6 +5,10 @@
       win_file:
         path: C:\scripts\PSscript2.ps1
         state: touch
+    
+    - name: Run remote PowerShell Script
+      win_command: powershell.exe -ExecutionPolicy ByPass -File C:\scripts\PSscript2.ps1
+    
     - name: remove a folder
       win_file:
         path: C:\scripts\TestScripts
